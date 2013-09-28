@@ -1,0 +1,37 @@
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    height: 300px
+}
+
+.container{
+	display: inline-block;
+	width: 80%;
+}
+
+.filterStyle label{
+	display: inline-block;
+	width: 30%;
+	font-weight: bold;
+	border-color: black;
+}
+
+.alignRight label{
+	text-align: right;
+}
+
+.alignLeft label{
+	text-align: left;
+}
+
+.filterStyle input{
+	width: 60%;
+	font-weight: bold;
+	border-color: black;
+}
+
+
+
+.filterStyle{
+	float: left;
+	width: 50%;
+}
