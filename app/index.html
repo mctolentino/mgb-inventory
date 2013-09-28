@@ -2,68 +2,78 @@
 <html ng-app="mgb-inventory">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
   <title>MGB Inventory</title>
-  <link rel="stylesheet" type="text/css" href="http://angular-ui.github.com/ng-grid/css/ng-grid.css" />
+  <link rel="stylesheet" type="text/css" href="css/ng-grid.css" />
   <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/overcast/jquery-ui.css" />
+  <link rel="stylesheet" href="css/start/jquery-ui-1.10.3.custom.css" />
 </head>
 <body ng-controller="MgbInventoryCtrl">
 
-  <div class="container">
-    <div class="filterStyle alignRight">
-
-      <label>ID:</label>
-      <input type="text" ng-model="filterId" />
-      <br />
-      <label>Region:</label>
-      <input type="text" ng-model="filterRegion" />
-      <br />
-      <label>Contractor:</label>
-      <input type="text" ng-model="filterContractor" />
-      <br />
-      <label>Commodity:</label>
-      <input type="text" ng-model="filterCommodity" />
-      <br />
-      <label>Stage:</label>
-      <input type="text" ng-model="filterStage" />
-      <br />
+  <div class="main">
+    <div>
+      <img src="img/1.jpg" height="60px" style="padding: 10px;" alt="MGB Logo" align="left" />
+      <h1 style="padding-top:30px;vertical-align:bottom;text-align:left;" >MGB MPSA Inventory</h1>
+      <hr width="100%" />
     </div>
-    <div class="filterStyle alignRight">  
+    
+    <div class="container">
+      <div class="filterStyle alignRight">
 
-      <label>Location:</label>
-      <input type="text" ng-model="filterLocation" />
-      <br />
-      <label>Contact Person:</label>
-      <input type="text" ng-model="filterContactPerson" />
-      <br />
+        <label class="width30">ID:</label>
+        <input type="text" ng-model="filterId" />
+        <br />
+        <label class="width30">Region:</label>
+        <input type="text" ng-model="filterRegion" />
+        <br />
+        <label class="width30">Contractor:</label>
+        <input type="text" ng-model="filterContractor" />
+        <br />
+        <label class="width30">Commodity:</label>
+        <input type="text" ng-model="filterCommodity" />
+        <br />
+        <label class="width30">Stage:</label>
+        <input type="text" ng-model="filterStage" />
+        <br />
+      </div>
+      <div class="filterStyle alignRight">  
 
-      <fieldset>
-        <input type="radio" style="width: 10%;" name="level" id="m" value="Metallic" ng-model='filterMetallicOrNonMetallic'>
-        <label for="m" style="text-align: left; width: 80%;">Mettalic</label>
-        <input type="radio" style="width: 10%;" name="level" id="nm" value="Non-Metallic" ng-model='filterMetallicOrNonMetallic'>
-        <label for="nm" style="text-align: left; width: 80%;">Non-Mettalic</label>
-        <input type="radio" style="width: 10%;" name="level" id="all" value="" ng-model='filterMetallicOrNonMetallic'>
-        <label for="nm" style="text-align: left; width: 80%;">All</label>
-      </fieldset>
-      <br />
+        <label class="width30">Location:</label>
+        <input type="text" ng-model="filterLocation" />
+        <br />
+        <label class="width30">Contact Person:</label>
+        <input type="text" ng-model="filterContactPerson" />
+        <br />
+
+        <div id="radioset" class="centerText" align="center" style="margin: 1em; width: 100%;">
+          <input type="radio" name="radio" id="m" value="Metallic" ng-model='filterMetallicOrNonMetallic'><label for="m">Mettalic</label>
+          <input type="radio" name="radio" id="nm" value="Non-Metallic" ng-model='filterMetallicOrNonMetallic'><label for="nm">Non-Mettalic</label>
+          <input type="radio" name="radio" id="all" value="" ng-model='filterMetallicOrNonMetallic'><label for="all">All</label>
+        </div>
+
+        <br />
+      </div>
     </div>
-
-    <div align="center">
-      <button class='filterButton' ng-click="activateFilter()">Run Filter</button>
-      <br />
+    <div align="right" style="padding: 10px;">
+      <button class="button" ng-click="activateFilter()">Run Filter</button>
     </div>
+    <div>
+      <div class="gridStyle" ng-grid="gridOptions"></div>
+    </div> 
   </div>
-  <br />
-  <div class="gridStyle" ng-grid="gridOptions"></div>
-
-  <script type="text/javascript" src="lib/jquery.min.js"></script>
+  <script src="lib/jquery-1.9.1.js"></script>
+  <script src="lib/jquery-ui-1.10.3.custom.js"></script>
   <script type="text/javascript" src="lib/angular.min.js"></script>
-  <script type="text/javascript" src="lib//ng-grid.debug.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
-  <script src="js/app.js"></script>
+  <script type="text/javascript" src="lib/ng-grid.debug.js"></script>
+  <script>
+    $(function() {
+      $( ".button" ).button();
+      $( "#radioset" ).buttonset();
+    });
+  </script>
+  <script type="text/javascript" src="js/services.js"></script>
+  <script type="text/javascript" src="js/controllers.js"></script>
+  <script type="text/javascript" src="js/filters.js"></script>
+  <script type="text/javascript" src="js/directives.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
