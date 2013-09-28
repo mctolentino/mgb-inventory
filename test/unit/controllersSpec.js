@@ -2,15 +2,16 @@
 
 /* jasmine specs for controllers go here */
 
-describe('controllers', function(){
-  beforeEach(module('myApp.controllers'));
+describe('MGB Inventory Controllers', function() {
+	beforeEach(module('mgb-inventory.controllers'));
+	beforeEach(module('ngGrid'));
 
+	it('should display a grid with 3 values', inject(function() {
+		//spec body
+		var scope = {},
+			ctrl = new MgbInventoryCtrl(scope);
 
-  it('should ....', inject(function() {
-    //spec body
-  }));
+		expect(scope.mydata.length).toBe(3);
+	}));
 
-  it('should ....', inject(function() {
-    //spec body
-  }));
 });
