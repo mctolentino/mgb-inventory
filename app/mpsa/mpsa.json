@@ -2217,7 +2217,7 @@
 		"stage": "Commercial Operation",
 		"area": " 342.6500 ",
 		"metallicorNonMetallic": "Non-Metallic",
-		"location": "Doña Remedios Trinidad and Norzagaray, Bulacan",
+		"location": "DoÃ±a Remedios Trinidad and Norzagaray, Bulacan",
 		"headOffice": "7th Floor, Two World Square, Mckinley Hill, Fort Bonifacio, Taguig City 1634",
 		"contactPerson": "Mr. Magdaleno B. Albaraccin",
 		"position": "",
@@ -2249,9 +2249,9 @@
 		"metallicorNonMetallic": "Non-Metallic",
 		"location": "Baras, Rizal",
 		"headOffice": "167 Sumulong Highway, Bo. Mayamot, Antipolo City",
-		"contactPerson": "Ms. Veronica Iñeguez Lee ",
+		"contactPerson": "Ms. Veronica IÃ±eguez Lee ",
 		"position": "President",
-		"contactNumber": "6453694, 6455150, Fax:  6457697 "
+		"contactNumber": "6453694, 6455150, Fax:  6457697Â "
 	}, {
 		"age": 254,
 		"id": "143-99-CAR",
@@ -2323,7 +2323,7 @@
 		"area": " 607.5000 ",
 		"metallicorNonMetallic": "Non-Metallic",
 		"location": "Sibonga, Cebu",
-		"headOffice": "Rm. 204, Aniceta Bldg., Osmeña Blvd., Cebu City",
+		"headOffice": "Rm. 204, Aniceta Bldg., OsmeÃ±a Blvd., Cebu City",
 		"contactPerson": "Mr. Juang Ben Lun ",
 		"position": "President",
 		"contactNumber": ""
@@ -2668,7 +2668,7 @@
 		"area": " 768.0000 ",
 		"metallicorNonMetallic": "Non-Metallic",
 		"location": "Libertad, Antique ",
-		"headOffice": "Prince Plaza Condominium I, Unit 203, Legaspi St., Makati City ",
+		"headOffice": "Prince Plaza Condominium I, Unit 203, Legaspi St., Makati CityÂ ",
 		"contactPerson": "Mr. Nestor F. Domingo",
 		"position": "President",
 		"contactNumber": ""
@@ -2683,7 +2683,7 @@
 		"area": " 4,896.1000 ",
 		"metallicorNonMetallic": "Non-Metallic",
 		"location": "Quezon, Palawan",
-		"headOffice": "5885 Zobel Roxas St., Makati City ",
+		"headOffice": "5885 Zobel Roxas St., Makati CityÂ ",
 		"contactPerson": "Mr. Benito Q. Bengzon",
 		"position": "President",
 		"contactNumber": ""
@@ -2713,7 +2713,7 @@
 		"area": " 5,149.9000 ",
 		"metallicorNonMetallic": "Non-Metallic",
 		"location": "Espanola, Narra and Quezon, Palawan",
-		"headOffice": "5885 Zobel Roxas St., Makati City ",
+		"headOffice": "5885 Zobel Roxas St., Makati CityÂ ",
 		"contactPerson": "Mr. Higinio C. Mendoza, Jr.",
 		"position": "President",
 		"contactNumber": ""
@@ -2849,7 +2849,7 @@
 		"metallicorNonMetallic": "Non-Metallic",
 		"location": "Mariveles, Bataan",
 		"headOffice": "153 EDSA, Brgy. Wack-Wack, Mandaluyong City",
-		"contactPerson": " Mr. Phillip Jasa",
+		"contactPerson": "Â Mr. Phillip Jasa",
 		"position": "President",
 		"contactNumber": ""
 	}, {
@@ -2894,7 +2894,7 @@
 		"metallicorNonMetallic": "Non-Metallic",
 		"location": "General Tinio, Nueva Ecija",
 		"headOffice": "68 Kalayaan St., Diliman, Quezon City",
-		"contactPerson": "Mr. Donato T. Pangilinan",
+		"contactPerson": "Mr.Â Donato T. Pangilinan",
 		"position": "President",
 		"contactNumber": ""
 	}, {
@@ -2908,7 +2908,7 @@
 		"area": "276.2273",
 		"metallicorNonMetallic": "Non-Metallic",
 		"location": "Legaspi City, Albay",
-		"headOffice": "192 Speaker Perez, Quezon City ",
+		"headOffice": "192 Speaker Perez, Quezon CityÂ ",
 		"contactPerson": "Mr. Johnny K. H. Uy",
 		"position": "President",
 		"contactNumber": ""
@@ -2937,7 +2937,7 @@
 		"stage": "Commercial Operation",
 		"area": "330.3062",
 		"metallicorNonMetallic": "Non-Metallic",
-		"location": "Doña Remedios Trinidad, Bulacan",
+		"location": "DoÃ±a Remedios Trinidad, Bulacan",
 		"headOffice": "No. 4, Manikling St., Talayan Village, Quezon City",
 		"contactPerson": "",
 		"position": "",
@@ -3539,7 +3539,7 @@
 		"stage": "Exploration",
 		"area": "107.9454",
 		"metallicorNonMetallic": "Non-Metallic",
-		"location": "Brgy. Bayabas, Doña Remedios, Trinidad, Bulacan",
+		"location": "Brgy. Bayabas, DoÃ±a Remedios, Trinidad, Bulacan",
 		"headOffice": "117 Shaw Blvd., Pasig City",
 		"contactPerson": "Ms. Annie G. Dee  ",
 		"position": "President",
@@ -3554,7 +3554,7 @@
 		"stage": "Partial Commercial Operations",
 		"area": " 2,176.0000 ",
 		"metallicorNonMetallic": "Metallic",
-		"location": "Narra and Sofronio Española Palawan",
+		"location": "Narra and Sofronio EspaÃ±ola Palawan",
 		"headOffice": "81 Sen. Gil Puyat Avenue, Palanan, Makati City",
 		"contactPerson": "Mr. Ferdinand M. Pallera  ",
 		"position": "President",
@@ -4291,15 +4291,15 @@
 		"area": "809.6265",
 		"metallicorNonMetallic": "Metallic",
 		"location": "Itogon, Benguet",
-		"headOffice": "Abaño Building, Daet, Camarines Norte",
-		"contactPerson": "Mr. Vivencio F. Abaño",
+		"headOffice": "AbaÃ±o Building, Daet, Camarines Norte",
+		"contactPerson": "Mr. Vivencio F. AbaÃ±o",
 		"position": "Representative",
 		"contactNumber": ""
 	}, {
 		"age": 116,
 		"id": "279-2009-V",
 		"region": "V",
-		"contractor": "Vicencio F. Abaño, Jose F. Abaño, Jr., Luis F. Abaño and Ofelia Abaño-Tamayo",
+		"contractor": "Vicencio F. AbaÃ±o, Jose F. AbaÃ±o, Jr., Luis F. AbaÃ±o and Ofelia AbaÃ±o-Tamayo",
 		"dateApproved": "April 8, 2009",
 		"commodity": "magnetite & other associated mineral deposits",
 		"stage": "Exploration ",
@@ -4530,7 +4530,7 @@
 		"stage": "Exploration",
 		"area": "1,167.11",
 		"metallicorNonMetallic": "Non-Metallic",
-		"location": "Norzagaray and Doña Remedios Trinidad, Bulacan",
+		"location": "Norzagaray and DoÃ±a Remedios Trinidad, Bulacan",
 		"headOffice": "7th Floor, Two World Square, Mckinley Hill, Fort Bonifacio, Taguig City 1634",
 		"contactPerson": "Mr. Magdaleno B. Albarracin, Jr. ",
 		"position": "President",
@@ -5299,7 +5299,7 @@
 		"metallicorNonMetallic": "Non-Metallic",
 		"location": "Teresa, Morong, Binangonan and Angono, Rizal",
 		"headOffice": "No. 167 Sumulong Highway , Mayamot, Antipolo, Rizal",
-		"contactPerson": "Veronica Iñiguez Lee",
+		"contactPerson": "Veronica IÃ±iguez Lee",
 		"position": "President",
 		"contactNumber": ""
 	}, {

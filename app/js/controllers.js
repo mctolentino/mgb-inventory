@@ -1,10 +1,15 @@
 /* Controllers */
 angular.module('mgb-inventory.controllers', ['ngGrid'])
-	.controller('MgbInventoryCtrl', ['$scope','$http',
+	.controller('MgbInventoryCtrl', ['$scope', '$http',
 		function($scope, $http) {
+
+			var viewContactCellTemplate = '<a href="#" class="popup" value="View" ng-click="OnView(row.entity);">View</a>';
+
 			$http.get('mpsa/mpsa.json').success(function(data) {
 				$scope.myData = data;
 			});
+
+			$scope.viewDetails = false;
 
 			$scope.filterOptions = {
 				filterText: ''
@@ -42,8 +47,35 @@ angular.module('mgb-inventory.controllers', ['ngGrid'])
 				}, {
 					field: 'contactPerson',
 					displayName: 'Contact Person'
+				}, {
+					field: 'view',
+					displayName: '',
+					enableCellEdit: false,
+					maxWidth: 10,
+					cellTemplate: viewContactCellTemplate,
+					colFilterText: ''
 				}]
 
+			};
+
+
+			$scope.OnView = function(value) {
+				$scope.id = value.id;
+				$scope.region = value.region;
+				$scope.province = value.province;
+				$scope.contractor = value.contractor;
+				$scope.commodity = value.commodity;
+				$scope.metallicorNonMetallic = value.metallicorNonMetallic;
+				$scope.stage = value.stage;
+				$scope.location = value.location;
+				$scope.contactPerson = value.contactPerson;
+				$scope.position = value.position;
+				$scope.contactNumber = value.contactNumber;
+				$scope.headOffice = value.headOffice;
+				$scope.dateApproved = value.dateApproved;
+				$scope.area = value.area;
+
+				$scope.viewDetails = true;
 			};
 
 
@@ -64,6 +96,7 @@ angular.module('mgb-inventory.controllers', ['ngGrid'])
 
 				filterText = addToFilterIfNotUndefinedAndNotEmpty(filterText, $scope.filterId, 'ID:');
 				filterText = addToFilterIfNotUndefinedAndNotEmpty(filterText, $scope.filterRegion, 'Region:');
+				filterText = addToFilterIfNotUndefinedAndNotEmpty(filterText, $scope.filterProvince, 'Province:');
 				filterText = addToFilterIfNotUndefinedAndNotEmpty(filterText, $scope.filterContractor, 'Contractor:');
 				filterText = addToFilterIfNotUndefinedAndNotEmpty(filterText, $scope.filterCommodity, 'Commodity:');
 				filterText = addToFilterIfNotUndefinedAndNotEmpty(filterText, $scope.filterMetallicOrNonMetallic, 'Metallic or Non-Metallic:');

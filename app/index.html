@@ -17,6 +17,7 @@
     </div>
     
     <div class="container">
+
       <div class="filterStyle alignRight">
 
         <label class="width30">ID:</label>
@@ -58,22 +59,85 @@
     </div>
     <div>
       <div class="gridStyle" ng-grid="gridOptions"></div>
-    </div> 
-  </div>
-  <script src="lib/jquery-1.9.1.js"></script>
-  <script src="lib/jquery-ui-1.10.3.custom.js"></script>
-  <script type="text/javascript" src="lib/angular.min.js"></script>
-  <script type="text/javascript" src="lib/ng-grid.debug.js"></script>
-  <script>
-    $(function() {
-      $( ".button" ).button();
-      $( "#radioset" ).buttonset();
-    });
-  </script>
-  <script type="text/javascript" src="js/services.js"></script>
-  <script type="text/javascript" src="js/controllers.js"></script>
-  <script type="text/javascript" src="js/filters.js"></script>
-  <script type="text/javascript" src="js/directives.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+
+      <br />
+      <div ng-show="viewDetails" class="detailsStyle alignRight">
+       <br />
+       <h2> MPSA Details </h2>
+       <hr />
+       <label for="id" class="width30">ID</label>
+       <input type="text" ng-model="id" disabled="true"/>
+       <br />
+
+       <label for="region" class="width30">Region</label>
+       <input type="text" ng-model="region" disabled="true"/>
+       <br />
+
+       <label for="contractor" class="width30">Contractor</label>
+       <input type="text" ng-model="contractor" disabled="true"/>
+       <br />
+
+       <label for="dateApproved" class="width30">Date Approved</label>
+       <input type="text" ng-model="dateApproved" disabled="true"/>
+       <br />
+
+       <label for="commodity" class="width30">Commodity</label>
+       <input type="text" ng-model="commodity" disabled="true"/>
+       <br />
+
+       <label for="stage" class="width30">Stage</label>
+       <input type="text" ng-model="stage" disabled="true"/>
+       <br />
+
+       <label for="area" class="width30">Area</label>
+       <input type="text" ng-model="area" disabled="true"/>
+       <br />
+
+       <label for="metallicorNonMetallic" class="width30">Metallic or Non-metallic</label>
+       <input type="text" ng-model="metallicorNonMetallic" disabled="true"/>
+       <br />
+
+       <label for="location" class="width30">Location</label>
+       <input type="text" ng-model="location" disabled="true"/>
+       <br />
+
+       <label for="headOffice" class="width30">Head Office</label>
+       <input type="text" ng-model="headOffice" disabled="true"/>
+       <br />
+
+       <label for="contactPerson" class="width30">Contact Person</label>
+       <input type="text" ng-model="contactPerson" disabled="true"/>
+       <br />
+
+       <label for="position" class="width30">Position</label>
+       <input type="text" ng-model="position" disabled="true"/>
+       <br />
+
+       <label for="contactNumber" class="width30">Contact Number</label>
+       <input type="text" ng-model="contactNumber" disabled="true"/>
+     </div>
+
+   </div> 
+ </div>
+ <script src="lib/jquery-1.9.1.js"></script>
+ <script src="lib/jquery-ui-1.10.3.custom.js"></script>
+ <script type="text/javascript" src="lib/angular.min.js"></script>
+ <script type="text/javascript" src="lib/ng-grid.debug.js"></script>
+ <script>
+  $(function() {
+    $( ".button" ).button();
+    $( "#radioset" ).buttonset();
+    $( "#dialog" ).dialog({autoOpen: false,
+      height: 300,
+      width: 350,
+      modal: true});
+    $(".popup").click( function(){ alert('Maki');});
+  });
+</script>
+<script type="text/javascript" src="js/services.js"></script>
+<script type="text/javascript" src="js/controllers.js"></script>
+<script type="text/javascript" src="js/filters.js"></script>
+<script type="text/javascript" src="js/directives.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

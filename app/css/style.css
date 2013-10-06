@@ -53,7 +53,7 @@
 
   .container{
   	display: inline-block;
-  	width: 80%;
+  	width: 100%;
   }
 
   .filterStyle label{
@@ -78,13 +78,32 @@
   }
 
   .filterStyle input{
-  	width: 60%;
+  	width: 50%;
   	font-weight: bold;
   	border-color: black;
   }
 
+  .detailsStyle{
+    float: left;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .detailsStyle label{
+    float: left;
+    vertical-align: middle;
+    width: 27%;
+  }
+
+  .detailsStyle input{
+    width: 70%;
+    font-weight: bold;
+    vertical-align: middle;
+    border-color: black;
+  }
+
   .main{
-  	width: 80%;
+  	width: 100%;
   	text-align: center;
   	border: thin;
   	border-color: grey;
