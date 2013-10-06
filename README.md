@@ -12,3 +12,4 @@ Then navigate your browser to `http://localhost:<port>/app/index.html` to see th
 your browser.
 
 
+C:\projects\mgb-inventory
